@@ -1,4 +1,5 @@
 Build Ranger Infrastructure with Terraform
+==========================================
 
 Terraform is an infrastructure as code software by HashiCorp. It is a server provisioning tool. It provisions and manages infrastructure across multiple providers such as AWS, GCP,Azure and OCI. Infrastructure is defined in a HCL Terraform syntax or JSON format.
 
@@ -22,12 +23,12 @@ Note: UserSync and LDAP are not part of this terraform script as of now.
 
 
 
-Pre-requisites for AWS:
+# Pre-requisites for AWS: #
 Create a VPC.
 Create two public subnets in different Availability Zones to be used for load balancer.
 Create two private subnets in different Availability Zones to be used for RDS (db subnet group).
-Pre-requisites for GCP:
 
+# Pre-requisites for GCP: #
 Create a service account.
 Download service account key in a JSON file.
 Create a VPC network and subnet.    
@@ -42,7 +43,7 @@ terraform.tfvars: This is the file where user can pass the desired values for al
 ranger_install.tpl: This template file has all the steps to install ranger admin in ec2 instance.
 solr_install.tpl: This template file has all the steps to install solr.
 
-How to run terraform commands: 
+# How to run terraform commands: 
 cd ranger
 
 terraform init
