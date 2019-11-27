@@ -24,24 +24,24 @@ Note: UserSync and LDAP are not part of this terraform script as of now.
 
 
 # Pre-requisites for AWS: #
-Create a VPC.
-Create two public subnets in different Availability Zones to be used for load balancer.
-Create two private subnets in different Availability Zones to be used for RDS (db subnet group).
+- Create a VPC.
+- Create two public subnets in different Availability Zones to be used for load balancer.
+- Create two private subnets in different Availability Zones to be used for RDS (db subnet group).
 
 # Pre-requisites for GCP: #
-Create a service account.
-Download service account key in a JSON file.
-Create a VPC network and subnet.    
+- Create a service account.
+- Download service account key in a JSON file.
+- Create a VPC network and subnet.    
 
 
 Most of the resource properties are parameterized. User has to change only terraform.tfvars as per the requirement.
 
-providers.tf: In terraform, providers are interfaces to the services that maintain our resources.This file has details about AWS provider. It can be extended for Azure, GCP etc..
-main.tf: This file contains all the resource configurations(rds/ec2/load balancer/security groups etc..).
-variables.tf: It has all input variable declarations.
-terraform.tfvars: This is the file where user can pass the desired values for all variables.Terraform will automatically load input variable values from any file named terraform.tfvars or ending in .auto.tfvars.
-ranger_install.tpl: This template file has all the steps to install ranger admin in ec2 instance.
-solr_install.tpl: This template file has all the steps to install solr.
+- providers.tf: In terraform, providers are interfaces to the services that maintain our resources.This file has details about AWS provider. It can be extended for Azure, GCP etc..
+- main.tf: This file contains all the resource configurations(rds/ec2/load balancer/security groups etc..).
+- variables.tf: It has all input variable declarations.
+- terraform.tfvars: This is the file where user can pass the desired values for all variables.Terraform will automatically load input variable values from any file named terraform.tfvars or ending in .auto.tfvars.
+- ranger_install.tpl: This template file has all the steps to install ranger admin in ec2 instance.
+- solr_install.tpl: This template file has all the steps to install solr.
 
 # How to run terraform commands: 
 cd ranger
