@@ -10,7 +10,7 @@ Used version : Terraform v0.11.10 or  https://www.terraform.io/downloads.html
 Below is the architectural diagram of the ranger infrastructure.
 
 
-
+![ranger_architecture](images/ranger_architecture.png)
 
 
 Terraform script has been developed to build this infrastructure. Following resources will be provisioned.
