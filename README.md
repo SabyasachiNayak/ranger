@@ -5,7 +5,7 @@ Terraform is an infrastructure as code software by HashiCorp. It is a server pro
 
 Terraform can be downloaded from here.
 
-Used version : Terraform v0.11.10 ( terraform.zip ) or  https://www.terraform.io/downloads.html
+Used version : Terraform v0.11.10 or  https://www.terraform.io/downloads.html
 
 Below is the architectural diagram of the ranger infrastructure.
 
